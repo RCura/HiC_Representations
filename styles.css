@@ -1,0 +1,12 @@
+.caption {
+     bottom:0px;
+     right:0px;
+     position:absolute;
+}
+
+.reveal section img { background:none; border:none; box-shadow:none; }
+
+.reveal i{
+    font-family: 'FontAwesome';
+    font-style: normal;
+}
