@@ -1,772 +1,599 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <meta name="generator" content="pandoc">
-  <title></title>
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
-  <link rel="stylesheet" href="Nouvelles_representations_files/reveal.js-3.3.0.1/css/reveal.css"/>
+  <head>
+    <title>Histoire de la Cartographie</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Thomas Louail &amp; Robin Cura   UMR Géographie-cités" />
+    <meta name="date" content="2018-03-12" />
+    <link rel="stylesheet" href="www/xaringan-themer.css" type="text/css" />
+    <link rel="stylesheet" href="www/style.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# Histoire de la Cartographie
+## Nouvelles sources et représentations graphiques associées
+### Thomas Louail &amp; Robin Cura <br /> UMR Géographie-cités
+### 03/12/2018
+
+---
+
+class: center, middle, inverse
 
 
 
-<link rel="stylesheet" href="Nouvelles_representations_files/reveal.js-3.3.0.1/css/theme/black.css" id="theme">
+# De nouvelles représentations ?
 
-<style type="text/css">
-.reveal section img {
-  background: rgba(255, 255, 255, 0.85);
-}
-</style>
+---
 
-  <!-- some tweaks to reveal css -->
-  <style type="text/css">
-    .reveal h1 { font-size: 2.0em; }
-    .reveal h2 { font-size: 1.5em;  }
-    .reveal h3 { font-size: 1.25em;	}
-    .reveal h4 { font-size: 1em;	}
+background-image: url(img/Bertin.jpeg)
+background-size: 50%
+background-position: 50% 70%
+.footnote[
+[G. Palsky, 2017, @ Retrospective Bertin EHESS](https://twitter.com/GillesPalsky/status/930417402055155712)
+]
+## Cartographie traditionnelle
 
-    .reveal .slides>section,
-    .reveal .slides>section>section {
-      padding: 0px 0px;
-    }
+---
+background-image: url(img/Bertin.jpeg)
+background-size: 50%
+background-position: 50% 70%
+ ## Qu'est-ce qui a changé ? 
 
-
-
-    .reveal table {
-      border-width: 1px;
-      border-spacing: 2px;
-      border-style: dotted;
-      border-color: gray;
-      border-collapse: collapse;
-      font-size: 0.7em;
-    }
-
-    .reveal table th {
-      border-width: 1px;
-      padding-left: 10px;
-      padding-right: 25px;
-      font-weight: bold;
-      border-style: dotted;
-      border-color: gray;
-    }
-
-    .reveal table td {
-      border-width: 1px;
-      padding-left: 10px;
-      padding-right: 25px;
-      border-style: dotted;
-      border-color: gray;
-    }
+.footnote[
+[G. Palsky, 2017, @ Retrospective Bertin EHESS](https://twitter.com/GillesPalsky/status/930417402055155712)
+]
 
 
-  </style>
+---
+## Pourquoi faire appel à de nouvelles représentations ?
 
-    <style type="text/css">code{white-space: pre;}</style>
+### Quels sont les changements qui pourraient demander la création de nouvelles pratiques cartographiques ?
 
-    <link rel="stylesheet" href="styles.css"/>
+--
 
-<!-- Printing and PDF exports -->
-<script id="paper-css" type="application/dynamic-css">
+- #### De nouveaux modes d'acquisition des données
 
-/* Default Print Stylesheet Template
-   by Rob Glazebrook of CSSnewbie.com
-   Last Updated: June 4, 2008
+--
 
-   Feel free (nay, compelled) to edit, append, and
-   manipulate this file as you see fit. */
+- #### De nouvelles propriétés des données
 
+--
 
-@media print {
+- #### Des pratiques d'utilisateurs ayant évoluées
 
-	/* SECTION 1: Set default width, margin, float, and
-	   background. This prevents elements from extending
-	   beyond the edge of the printed page, and prevents
-	   unnecessary background images from printing */
-	html {
-		background: #fff;
-		width: auto;
-		height: auto;
-		overflow: visible;
-	}
-	body {
-		background: #fff;
-		font-size: 20pt;
-		width: auto;
-		height: auto;
-		border: 0;
-		margin: 0 5%;
-		padding: 0;
-		overflow: visible;
-		float: none !important;
-	}
+--
 
-	/* SECTION 2: Remove any elements not needed in print.
-	   This would include navigation, ads, sidebars, etc. */
-	.nestedarrow,
-	.controls,
-	.fork-reveal,
-	.share-reveal,
-	.state-background,
-	.reveal .progress,
-	.reveal .backgrounds {
-		display: none !important;
-	}
+- #### De nouvelles attentes de la part des utilisateurs
 
-	/* SECTION 3: Set body font face, size, and color.
-	   Consider using a serif font for readability. */
-	body, p, td, li, div {
-		font-size: 20pt!important;
-		font-family: Georgia, "Times New Roman", Times, serif !important;
-		color: #000;
-	}
+---
+class: center, middle, inverse
 
-	/* SECTION 4: Set heading font face, sizes, and color.
-	   Differentiate your headings from your body text.
-	   Perhaps use a large sans-serif for distinction. */
-	h1,h2,h3,h4,h5,h6 {
-		color: #000!important;
-		height: auto;
-		line-height: normal;
-		font-family: Georgia, "Times New Roman", Times, serif !important;
-		text-shadow: 0 0 0 #000 !important;
-		text-align: left;
-		letter-spacing: normal;
-	}
-	/* Need to reduce the size of the fonts for printing */
-	h1 { font-size: 28pt !important;  }
-	h2 { font-size: 24pt !important; }
-	h3 { font-size: 22pt !important; }
-	h4 { font-size: 22pt !important; font-variant: small-caps; }
-	h5 { font-size: 21pt !important; }
-	h6 { font-size: 20pt !important; font-style: italic; }
+# Changements dans les pratiques des utilisateurs
 
-	/* SECTION 5: Make hyperlinks more usable.
-	   Ensure links are underlined, and consider appending
-	   the URL to the end of the link for usability. */
-	a:link,
-	a:visited {
-		color: #000 !important;
-		font-weight: bold;
-		text-decoration: underline;
-	}
-	/*
-	.reveal a:link:after,
-	.reveal a:visited:after {
-		content: " (" attr(href) ") ";
-		color: #222 !important;
-		font-size: 90%;
-	}
-	*/
+---
+
+## De la carte papier à la carte numérique
+.center[
+![:scale 80%](img/Matricielle.png)
+]
+---
+## De la carte papier à la carte numérique
+### Un espace restreint
+.pull-left[
+![](img/IGN_depliee.jpg)
+]
+.pull-right[
+![](img/GoogleMaps_tablet.jpg)
+]
+
+--
+
+- #### La carte doit être plus synthétique qu'auparavant
+
+--
+
+- #### On ne peut plus prévoir les dimensions de lecture d'une carte
+
+---
+## De la carte papier à la carte numérique
+### Un support navigable
+
+.pull-left[
+&lt;div style="width:100%;height:0;padding-bottom:100%;position:relative;"&gt;&lt;iframe src="https://giphy.com/embed/zeBXGFy05ypdS" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen&gt;&lt;/iframe&gt;&lt;/div&gt;
+]
+
+--
+
+.pull-right[
+- #### L'utilisateur s'attend à pouvoir zoomer et se déplacer dans une carte
+- #### La navigation doit être prévue et circonscrite.
+]
+
+---
+## De la carte numérique à la carte interactive
+
+.center[
+&lt;video controls width="50%" autoplay&gt;
+&lt;source src="img/maps_interaction.mp4" type="video/mp4"&gt;
+&lt;/video&gt;
+]
+
+--
+
+- #### L'utilisateur est désormais habitué à explorer interactivement la carte
+
+--
+
+- #### Il s'attend à ce qu'une carte lui propose différents fonds, des infobulles, de l'interactivité contextuelle (`onClick`, menus détails etc.)
 
 
-	/* SECTION 6: more reveal.js specific additions by @skypanther */
-	ul, ol, div, p {
-		visibility: visible;
-		position: static;
-		width: auto;
-		height: auto;
-		display: block;
-		overflow: visible;
-		margin: 0;
-		text-align: left !important;
-	}
-	.reveal pre,
-	.reveal table {
-		margin-left: 0;
-		margin-right: 0;
-	}
-	.reveal pre code {
-		padding: 20px;
-		border: 1px solid #ddd;
-	}
-	.reveal blockquote {
-		margin: 20px 0;
-	}
-	.reveal .slides {
-		position: static !important;
-		width: auto !important;
-		height: auto !important;
+---
+## De la carte interactive aux cartes adaptatives
 
-		left: 0 !important;
-		top: 0 !important;
-		margin-left: 0 !important;
-		margin-top: 0 !important;
-		padding: 0 !important;
-		zoom: 1 !important;
+&lt;img src="img/supportsMaps.png" height="200" style="background:none; border:none; box-shadow:none;"&gt;&lt;img src="img/watch.png" height="100" style="background:none; border:none; box-shadow:none;"&gt;
 
-		overflow: visible !important;
-		display: block !important;
+--
 
-		text-align: left !important;
-		-webkit-perspective: none;
-		   -moz-perspective: none;
-		    -ms-perspective: none;
-		        perspective: none;
+- #### On ne peut plus prévoir une carte statique unique
 
-		-webkit-perspective-origin: 50% 50%;
-		   -moz-perspective-origin: 50% 50%;
-		    -ms-perspective-origin: 50% 50%;
-		        perspective-origin: 50% 50%;
-	}
-	.reveal .slides section {
-		visibility: visible !important;
-		position: static !important;
-		width: auto !important;
-		height: auto !important;
-		display: block !important;
-		overflow: visible !important;
+--
 
-		left: 0 !important;
-		top: 0 !important;
-		margin-left: 0 !important;
-		margin-top: 0 !important;
-		padding: 60px 20px !important;
-		z-index: auto !important;
+- #### Pour chaque carte réalisée, la lecture doit être pensée pour 3-4 supports...
 
-		opacity: 1 !important;
+--
 
-		page-break-after: always !important;
+- #### ... et autant de modes d'interactions
 
-		-webkit-transform-style: flat !important;
-		   -moz-transform-style: flat !important;
-		    -ms-transform-style: flat !important;
-		        transform-style: flat !important;
+---
 
-		-webkit-transform: none !important;
-		   -moz-transform: none !important;
-		    -ms-transform: none !important;
-		        transform: none !important;
+## Nouveaux usages et réponses cartographiques adaptées
 
-		-webkit-transition: none !important;
-		   -moz-transition: none !important;
-		    -ms-transition: none !important;
-		        transition: none !important;
-	}
-	.reveal .slides section.stack {
-		padding: 0 !important;
-	}
-	.reveal section:last-of-type {
-		page-break-after: avoid !important;
-	}
-	.reveal section .fragment {
-		opacity: 1 !important;
-		visibility: visible !important;
+- #### Nécessité de prévoir une combinaison importante de cas d'usages
 
-		-webkit-transform: none !important;
-		   -moz-transform: none !important;
-		    -ms-transform: none !important;
-		        transform: none !important;
-	}
-	.reveal section img {
-		display: block;
-		margin: 15px 0px;
-		background: rgba(255,255,255,1);
-		border: 1px solid #666;
-		box-shadow: none;
-	}
+--
 
-	.reveal section small {
-		font-size: 0.8em;
-	}
 
-}  
+- #### On ne peut plus se contenter de peaufiner une carte "statique" adaptée à tout
+
+--
+
+- #### Les cartographies et géovisualisations doivent tirer parti des outils existants permettant de simplifier l'adaptatibilité à tout support : 
+  * #### Un support "universel" : les navigateurs internets
+  * #### Un formalisme "universel" : le combo "HTML5" : (HTML, CSS, JS + SVG)
+
+---
+class: middle, center, inverse
+
+# Le support cartographique évolue, mais n'implique pas pour autant de "nouvelles représentations", tout au plus de nouvelles pratiques.
+
+---
+
+## Les pratiques des utilisateurs ne sont pas les seules évolutions de cette dernière décennie :
+
+- #### Nouvelles sources de données :
+
+  * #### Des données massives
+  * #### Des données plus diverses
+  * #### Des données plus rapides
+#### =&gt; de nouveaux besoins en représentation et en traitement.
+
+
+---
+class: center, middle, inverse
+
+# Des données massives
+
+---
+## Représentation
+
+.center[
+![:scale 100%](img/QGIS_base.png)
+]
+
+--
+
+### Quelle hiérarchie visuelle ?
+
+---
+## Représentation
+
+.center[
+![:scale 90%](img/points_carto.png)
+]
+
+.footnote[
+[B. Mericksay, 2017, Cartes &amp; géomatique,vol. 229](https://halshs.archives-ouvertes.fr/halshs-01468314)
+]
+---
+## Représentation
+### The Racial Dot Map
+
+.center[
+![:scale 100%](img/RacialDotMap.png)
+]
+.footnote[
+[https://demographics.virginia.edu/DotMap/index.html](https://demographics.virginia.edu/DotMap/index.html)
+]
+
+---
+## Représentation
+### Heatmaps
+.center[
+![:scale 100%](img/TimeLine1.png)
+]
+
+.footnote[
+[R. Cura, 2016, TimeLineEDB](http://shiny.parisgeo.cnrs.fr/TimeLineEDB/)
+]
+
+---
+
+## Représentation
+### Agrégation
+
+.center[
+&lt;video controls width="80%" autoplay src="img/FrancePixels.mp4" &gt;&lt;/video&gt;
+]
+
+.footnote[
+[E. Côme, 2014, France Pixels](http://www.comeetie.fr/galerie/francepixels/#splash)
+]
+
+
+---
+
+## Représentation
+### Clusters
+.center[
+&lt;video controls width="80%" autoplay src="img/clusters.mp4" &gt;&lt;/video&gt;
+]
+
+---
+
+## Représentation
+### Lissage
+.center[
+&lt;video controls width="75%" autoplay src="img/aperitif.mp4" &gt;&lt;/video&gt;
+]
+
+.footnote[
+[H. Commenges, 2017, Apérit-IF](https://analytics.huma-num.fr/Hadrien.Commenges/aperitif/)
+]
+
+---
+
+## Problèmes techniques
+
+### Pour l'affichage :
+
+--
+
+- #### Les logiciels de SIG ne gèrent pas les données massives...
+
+--
+
+- #### les outils de DAO encore moins.
+
+--
+
+- #### Impossible d'afficher des millions d'entités vectorielles sur un ordinateur lambda : SIG ou web
+
+---
+
+## Problèmes techniques
+
+### Pour l'affichage :
+
+#### =&gt; Quand le vecteur n'est pas possible :
+  * ##### On agrège : Clusters, hexbins, densité etc.
+  * ##### On rasterise : GeoServer, MapServer etc.
+  * ##### Tuilage traditionnel (GeoServer, MapServer...) et plus moderne (Mapbox, CARTO, TileMill)
+
+.center[
+![:scale 80%](img/Mericksay2.png)
+]
+.footnote[
+[B. Mericksay, ibid.](https://halshs.archives-ouvertes.fr/halshs-01468314)
+]
+
+
+---
+## Problèmes techniques
+
+### Traitement :
+
+- #### Les logiciels de SIG ne gèrent pas les données massives...
+- #### et les outils de DAO encore moins.
+
+--
+
+- #### Les données massives sont difficilement manipulables hors environnements propres aux données :
+  * #### Pré-traitement des données : R, Python, filtres intra-API
+  * #### Mise en forme et requête des données : Idem + SQL
+
+---
+## Problèmes techniques
+
+.center[
+![:scale 80%](img/rpythonsql.jpg)
+]
+
+---
+
+## Traitement + création
+.center[
+![:scale 100%](img/facebook_map.png)
+]
+
+.footnote[
+[P. Butler, 2010, Visualizing Facebook Friends](https://paulbutler.org/archives/visualizing-facebook-friends/)
+]
+
+
+---
+class: center, middle, inverse
+# Des données hétérogènes
+
+---
+## Représentation
+
+.pull-left[
+![:scale 100%](img/mtmx1.png)
+
+.footnote[
+[M. Garnier (Matamix), 2017, Cartes à points pour bêtes à poils](https://mtmx.github.io/blog/carto_cheptels/)
+]
+]
+
+--
+
+.pull-right[
+
+### Comment donner une vision synthétique de la répartition de chaque type ?
+]
+
+---
+## Représentation
+
+.pull-left[
+![:scale 80%](img/mtmx2.png)
+]
+
+.pull-right[
+- #### Technique des "*small-multiples*"
+]
+
+---
+## Représentation
+
+.center[
+![:scale 100%](img/hetero1.png)
+]
+
+.footnote[
+[E. Côme, 2015, Bâti Paris](http://www.comeetie.fr/galerie/BatiParis/#12/48.8589/2.3491)
+]
+
+---
+## Représentation - Selection
+
+.center[
+&lt;video controls width="80%" controls autoplay src="img/parisbati.mp4"&gt;&lt;/video&gt;
+]
+.footnote[
+[E. Côme, 2015, Bâti Paris](http://www.comeetie.fr/galerie/BatiParis/#12/48.8589/2.3491)
+]
+
+--
+
+- #### Laisser l'utilisateur afficher ses propres classes
+
+---
+## Représentation - Drill-down
+
+.center[
+&lt;video controls autoplay src="img/drill_mapd.mp4" width="100%"&gt;&lt;/video&gt;
+]
+
+.footnote[
+[Team MapD, 2016, Tweetmap](https://www.mapd.com/blog/2016/06/17/our-latest-tweetmap-innovation-streaming-content/)
+]
+
+--
+
+- #### Y compris de manière itérative
+
+---
+## Représentation - Multiplier les informations
+
+.center[
+&lt;video controls autoplay src="img/velib_multipt.mp4" width="80%"&gt;&lt;/video&gt;
+]
+
+.footnote[
+[E. Côme, 2013](http://www.comeetie.fr/galerie/velib/)
+]
+
+---
+## Représentation - Guider le lecteur
+
+.center[
+![:scale 80%](img/francepixels_ex.png)
+]
+
+.footnote[
+[E. Côme, 2014, France Pixels](http://www.comeetie.fr/galerie/francepixels/#splash)
+]
+
+
+---
+## Représentation - Guider le lecteur
+
+.center[
+&lt;video controls autoplay src="img/got.mp4" width="80%"&gt;&lt;/video&gt;
+]
+
+.footnote[
+[Northwestern University Knight Lab, StoryMapsJS](https://storymap.knightlab.com/examples/aryas-journey/)
+]
+
+---
+## Représentation - Guider le lecteur
+
+.center[
+![:scale 70%](img/northkorea.png)
+]
+
+.footnote[
+[Martino, Byrd &amp; Spraggon, 2017, Where can North Korea’s missiles reach?](http://www.abc.net.au/news/2017-10-16/north-korea-missile-range-map/8880894)
+]
+
+
+---
+## Représentation - Laisser au lecteur le soin de comprendre lui-même les phénomènes cartographiés
+
+.center[
+&lt;video controls autoplay src="img/mobiliscope.mp4" width="80%"&gt;&lt;/video&gt;
+]
+
+.footnote[
+[J. Vallée, C. Lecomte &amp; al., 2017, Mobiliscope](http://mobiliscope.parisgeo.cnrs.fr/)
+]
+
+---
+## Représentation - Laisser explorer les données massives et hétérogènes
+
+.center[
+&lt;video controls autoplay src="img/mapd_ships.mp4" width="80%"&gt;&lt;/video&gt;
+]
+
+.footnote[
+[M. McLintic, MapD, 2017, An interactive GPU-powered deep dive into 11.6 billion rows of US shipping data](https://www.mapd.com/blog/2017/08/22/an-interactive-deep-dive-into-11-6b-rows-of-us-shipping-data/)
+]
+
+---
+## Problèmes techniques
+
+- #### Quelques outils "clefs-en-main" pour créer des géovisualisation interactives...
+
+
+.center[
+![:scale 20%](img/Deckgl.png)
+&lt;iframe width="100%" height="350px" src="https://www.youtube.com/embed/kgcJ0rftIUA" frameborder="0" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
+]
+
+---
+## Problèmes techniques
+
+- #### Quelques outils "clefs-en-main" pour créer des géovisualisation interactives...
+
+.center[
+![:scale 20%](img/CARTO.png)
+&lt;iframe width="100%" height="350px" src="https://www.youtube.com/embed/lto7Z5wC2hQ" frameborder="0" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
+]
+
+
+---
+- #### Quelques outils "clefs-en-main" pour créer des géovisualisation interactives...
+.center[
+![:scale 25%](img/Deckgl.png) ![:scale 20%](img/CARTO.png)
+]
+
+- #### mais pour une création plus personnalisée et durable, besoin de passer par du développement :
+
+--
+
+  * Javascript ![:scale 10%](img/d3.png)![:scale 15%](img/vega.png)![:scale 15%](img/plotly.png)![:scale 10%](img/leaflet.png)![:scale 15%](img/mapbox.png)
+
+
+--
+  * R ![:scale 10%](img/shiny.png)![:scale 20%](img/flexdb.png)
+
+--
+  * Python ![:scale 20%](img/dash.png)![:scale 20%](img/bokeh.png)
+
+---
+class: middle, center, inverse
+
+# Des données éphémères
+
+---
+## Retour sur la présentation des nouvelles sources
+
+- #### D'immenses flux de données en permanence
+- #### qui rendent les données rapidement obsolètes
+
+--
+
+- #### =&gt; On n'est plus dans le paradigme de mise à jour décennalle autour des données INSEE
+
+--
+
+  * #### La carte doit être évolutive simplement et rapidement
+  * #### La documentation ne suffit plus : toute la production d'une carte doit être un "workflow"
+  * #### Penser toute la construction de la carte en termes d'automatisation et reproductibilité
+  * #### Par génération automatique depuis des API, depuis des données standardisées etc.
+
+---
+class: center, inverse
+background-image: url(img/Vermeer.jpeg)
+background-size: 50%
+background-position: 50% 70%
+
+
+# En guise de conclusion
+
+---
+
+« There’s a lot that cartographers have learned that is useful and valuable [...] but there’s a lot that was dead wood to begin with, and is so rotten today it’s threatening the rest of it.
+
+All the prescriptive bullshit, every map must have a legend and a scale - all that - ignored in fact on a gazillion effective, useful maps, all that has to stop.
+
+And design! Academic cartographers have never understood a thing - *not a thing* - about design. God knows that, as a group, the *least* interesting, *least* attractive, *least* significant maps have been made by university cartographers: all that *design talk*, from design illiterates, that’s got to stop. [...]
+
+What would be helpful would be to offer professional *assistance*, on bended knee if necessary, to all the people trying to ameliorate their situation by mapping it.»
+.center[
+[D. Wood, 2003, Cartography is dead (Thank God!)](http://makingmaps.owu.edu/mm/cartographydead.pdf)
+]
+
+- #### Pour aller plus loin (*design* des fonds carto., carto interactive ...) :
+  * #### [B. Mericskay - Visualisation de données spatiales sur le web - GeoViz 2018](https://geoviz.sciencesconf.org/data/pages/Visualisation_de_donnees_spatiales_sur_le_Web.pdf)
+  * #### [E. Côme - (Géo)-visualisation et interactions quelques exemples - GeoViz 2018](http://www.comeetie.fr/partage/geoviz/)
+    </textarea>
+<script src="www/libs/remark.min.js"></script>
+<script src="www/macros.js"></script>
+<script>var slideshow = remark.create({
+"highlightLines": true
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function() {
+  var d = document, s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})();</script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+  }
+});
 </script>
-
-
-<script id="pdf-css" type="application/dynamic-css">
-    
-/**
- * This stylesheet is used to print reveal.js
- * presentations to PDF.
- *
- * https://github.com/hakimel/reveal.js#pdf-export
- */
-
-* {
-	-webkit-print-color-adjust: exact;
-}
-
-body {
-	margin: 0 auto !important;
-	border: 0;
-	padding: 0;
-	float: none !important;
-	overflow: visible;
-}
-
-html {
-	width: 100%;
-	height: 100%;
-	overflow: visible;
-}
-
-/* Remove any elements not needed in print. */
-.nestedarrow,
-.reveal .controls,
-.reveal .progress,
-.reveal .playback,
-.reveal.overview,
-.fork-reveal,
-.share-reveal,
-.state-background {
-	display: none !important;
-}
-
-h1, h2, h3, h4, h5, h6 {
-	text-shadow: 0 0 0 #000 !important;
-}
-
-.reveal pre code {
-	overflow: hidden !important;
-	font-family: Courier, 'Courier New', monospace !important;
-}
-
-ul, ol, div, p {
-	visibility: visible;
-	position: static;
-	width: auto;
-	height: auto;
-	display: block;
-	overflow: visible;
-	margin: auto;
-}
-.reveal {
-	width: auto !important;
-	height: auto !important;
-	overflow: hidden !important;
-}
-.reveal .slides {
-	position: static;
-	width: 100%;
-	height: auto;
-
-	left: auto;
-	top: auto;
-	margin: 0 !important;
-	padding: 0 !important;
-
-	overflow: visible;
-	display: block;
-
-	-webkit-perspective: none;
-	   -moz-perspective: none;
-	    -ms-perspective: none;
-	        perspective: none;
-
-	-webkit-perspective-origin: 50% 50%; /* there isn't a none/auto value but 50-50 is the default */
-	   -moz-perspective-origin: 50% 50%;
-	    -ms-perspective-origin: 50% 50%;
-	        perspective-origin: 50% 50%;
-}
-
-.reveal .slides section {
-	page-break-after: always !important;
-
-	visibility: visible !important;
-	position: relative !important;
-	display: block !important;
-	position: relative !important;
-
-	margin: 0 !important;
-	padding: 0 !important;
-	box-sizing: border-box !important;
-	min-height: 1px;
-
-	opacity: 1 !important;
-
-	-webkit-transform-style: flat !important;
-	   -moz-transform-style: flat !important;
-	    -ms-transform-style: flat !important;
-	        transform-style: flat !important;
-
-	-webkit-transform: none !important;
-	   -moz-transform: none !important;
-	    -ms-transform: none !important;
-	        transform: none !important;
-}
-
-.reveal section.stack {
-	margin: 0 !important;
-	padding: 0 !important;
-	page-break-after: avoid !important;
-	height: auto !important;
-	min-height: auto !important;
-}
-
-.reveal img {
-	box-shadow: none;
-}
-
-.reveal .roll {
-	overflow: visible;
-	line-height: 1em;
-}
-
-/* Slide backgrounds are placed inside of their slide when exporting to PDF */
-.reveal section .slide-background {
-	display: block !important;
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	z-index: -1;
-}
-
-/* All elements should be above the slide-background */
-.reveal section>* {
-	position: relative;
-	z-index: 1;
-}
-
-/* Display slide speaker notes when 'showNotes' is enabled */
-.reveal .speaker-notes-pdf {
-	display: block;
-	width: 100%;
-	max-height: none;
-	left: auto;
-	top: auto;
-	z-index: 100;
-}
-
-/* Display slide numbers when 'slideNumber' is enabled */
-.reveal .slide-number-pdf {
-	display: block;
-	position: absolute;
-	font-size: 14px;
-}
-
-</script>
-
-
+<!-- dynamically load mathjax for compatibility with self-contained -->
 <script>
-var style = document.createElement( 'style' );
-style.type = 'text/css';
-var style_script_id = window.location.search.match( /print-pdf/gi ) ? 'pdf-css' : 'paper-css';
-var style_script = document.getElementById(style_script_id).text;
-style.innerHTML = style_script;
-document.getElementsByTagName('head')[0].appendChild(style);
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
 </script>
-
-    <link href="Nouvelles_representations_files/font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet" />
-</head>
-<body>
-  <div class="reveal">
-    <div class="slides">
-
-<section>
-    <h1 class="title"><h3>
-M2 Carthagéo - Histoire de la Cartographie
-</h3></h1>
-  <h1 class="subtitle"><h2>
-Nouvelles sources et représentations graphiques associées
-</h2></h1>
-    <h2 class="author"><h3>
-Thomas Louail &amp; Robin Cura
-</h3></h2>
-    <h2 class="author"><h3>
-UMR Géographie-cités
-</h3></h2>
-    <h3 class="date"><h4>
-06/12/2017
-</h4>
-<p>
-<i class="fa fa-github fa-2x"></i> <a href="https://github.com/RCura/HiC_Representations" class="uri">https://github.com/RCura/HiC_Representations</a>
-</p></h3>
-</section>
-
-<section><section id="de-nouvelles-representations" class="titleslide slide level1"><h1>De nouvelles représentations ?</h1></section><section id="cartographie-traditionnelle" class="slide level2" data-background="img/Bertin.jpeg" data-background-size="contain">
-<h2>Cartographie traditionnelle</h2>
-</section><section id="quest-ce-qui-a-change" class="slide level2">
-<h2>Qu’est-ce qui a changé ?</h2>
-<p><img src="img/Bertin.jpeg" height="600"> <span class="caption" style="font-size:smaller;"><a href="https://twitter.com/GillesPalsky/status/930417402055155712">G. Palsky, 2017, @ Retrospective Bertin EHESS</a></span></p>
-</section><section id="pourquoi-faire-appel-a-de-nouvelles-representations" class="slide level2">
-<h2>Pourquoi faire appel à de nouvelles représentations ?</h2>
-<p>Quels sont les changements qui pourraient demander la création de nouvelles pratiques cartographiques ?</p>
-<ul>
-<li class="fragment">De nouveaux modes d’acquisition des données</li>
-<li class="fragment">De nouvelles propriétés des données</li>
-<li class="fragment">Des pratiques d’utilisateurs ayant évoluées</li>
-<li class="fragment">De nouvelles attentes de la part des utilisateurs</li>
-</ul>
-</section></section>
-<section><section id="changements-dans-les-pratiques-des-utilisateurs" class="titleslide slide level1"><h1>Changements dans les pratiques des utilisateurs</h1></section><section id="de-la-carte-papier-a-la-carte-numerique" class="slide level2">
-<h2>De la carte papier à la carte numérique</h2>
-<p><img src="img/Matricielle.png" height="550"></p>
-</section><section class="slide level2">
-
-<h3 id="un-espace-restreint">Un espace restreint</h3>
-<p><img src="img/IGN_depliee.jpg" height="250"><img src="img/GoogleMaps_tablet.jpg" height="250"></p>
-<ul>
-<li class="fragment">La carte doit être plus synthétique qu’auparavant</li>
-<li class="fragment">On ne peut plus prévoir les dimensions de lecture d’une carte</li>
-</ul>
-</section><section class="slide level2">
-
-<h3 id="un-support-navigable">Un support navigable</h3>
-<iframe src="https://giphy.com/embed/zeBXGFy05ypdS" width="480" height="479" frameBorder="0" class="giphy-embed" allowFullScreen>
-</iframe>
-<ul>
-<li class="fragment">L’utilisateur s’attend à pouvoir zoomer et se déplacer dans une carte</li>
-<li class="fragment">La navigation doit être prévue et circonscrite.</li>
-</ul>
-</section><section id="de-la-carte-numerique-a-la-carte-interactive" class="slide level2">
-<h2>De la carte numérique à la carte interactive</h2>
-<video data-autoplay data-src="img/maps_interaction.mp4" height="350">
-</video>
-<ul>
-<li class="fragment">L’utilisateur est désormais habitué à explorer interactivement la carte</li>
-<li class="fragment">Il s’attend à ce qu’une carte lui propose différents fonds, des infobulles, de l’interactivité contextuelle (<code>onClick</code>, menus détails etc.)</li>
-</ul>
-</section><section id="de-la-carte-interactive-aux-cartes-adaptatives" class="slide level2">
-<h2>De la carte interactive aux cartes adaptatives</h2>
-<p><img src="img/supportsMaps.png" height="200" style="background:none; border:none; box-shadow:none;"><img src="img/watch.png" height="100" style="background:none; border:none; box-shadow:none;"></p>
-<ul>
-<li class="fragment">On ne peut plus prévoir une carte statique unique</li>
-<li class="fragment">Pour chaque carte réalisée, la lecture doit être pensée pour 3-4 supports…</li>
-<li class="fragment">… et autant de modes d’interactions</li>
-</ul>
-</section><section id="nouveaux-usages-et-reponses-cartographiques-adaptees" class="slide level2">
-<h2>Nouveaux usages et réponses cartographiques adaptées</h2>
-<ul>
-<li class="fragment">Nécessité de prévoir une combinaison importante de cas d’usages</li>
-<li class="fragment">On ne peut plus se contenter de peaufiner une carte “statique” adaptée à tout</li>
-<li class="fragment">Les cartographies et géovisualisations doivent tirer parti des outils existants permettant de simplifier l’adaptatibilité à tout support :
-<ul>
-<li class="fragment">Un support “universel” : les navigateurs internets</li>
-<li class="fragment">Un formalisme “universel” : le combo “HTML<i class="fa fa-html5"></i>” : (HTML, CSS, JS + SVG)</li>
-</ul></li>
-</ul>
-</section></section>
-<section><section id="le-support-cartographique-evolue-mais-nimplique-pas-pour-autant-de-nouvelles-representations-tout-au-plus-de-nouvelles-pratiques." class="titleslide slide level1"><h1>Le support cartographique évolue, mais n’implique pas pour autant de “nouvelles représentations”, tout au plus de nouvelles pratiques.</h1></section><section id="mais-les-pratiques-des-utilisateurs-ne-sont-pas-les-seules-evolutions-de-cette-derniere-decennie" class="slide level2">
-<h2>Mais les pratiques des utilisateurs ne sont pas les seules évolutions de cette dernière décennie :</h2>
-<ul>
-<li class="fragment"><h4 id="nouvelles-sources-de-donnees">Nouvelles sources de données :</h4>
-<ul>
-<li class="fragment"><h5 id="des-donnees-massives">Des données massives</h5></li>
-<li class="fragment"><h5 id="des-donnees-plus-diverses">Des données plus diverses</h5></li>
-<li class="fragment"><h5 id="des-donnees-plus-rapides">Des données plus rapides</h5>
-<h4 id="de-nouveaux-besoins-en-representation-et-en-traitement.">==&gt; de nouveaux besoins en représentation et en traitement.</h4></li>
-</ul></li>
-</ul>
-</section></section>
-<section><section id="des-donnees-massives-1" class="titleslide slide level1"><h1>Des données massives</h1></section><section id="representation" class="slide level2">
-<h2>Représentation</h2>
-<p><img src="img/QGIS_base.png" height="600" style="background:none; border:none; box-shadow:none;"></p>
-<h3 id="quelle-hierarchie-visuelle">Quelle hiérarchie visuelle ?</h3>
-</section><section id="representation-1" class="slide level2">
-<h2>Représentation</h2>
-<p><img src="img/points_carto.png" height="600" style="background:none; border:none; box-shadow:none;"> <span class="caption" style="font-size:smaller;"><a href="https://halshs.archives-ouvertes.fr/halshs-01468314">B. Mericksay, 2017, Cartes &amp; géomatique,vol. 229</a></span></p>
-</section><section id="representation-2" class="slide level2">
-<h2>Représentation</h2>
-<h3 id="the-racial-dot-map">The Racial Dot Map</h3>
-<p><img src="img/RacialDotMap.png" height="500" style="background:none; border:none; box-shadow:none;"> <span class="caption" style="font-size:smaller;"><a href="https://demographics.virginia.edu/DotMap/index.html" class="uri">https://demographics.virginia.edu/DotMap/index.html</a></span></p>
-</section><section id="representation-3" class="slide level2">
-<h2>Représentation</h2>
-<h3 id="heatmaps">Heatmaps</h3>
-<p><img src="img/TimeLine1.png" height="500" style="background:none; border:none; box-shadow:none;"> <span class="caption" style="font-size:smaller;"><a href="http://shiny.parisgeo.cnrs.fr/TimeLineEDB/">R. Cura, 2016, TimeLineEDB</a></span></p>
-</section><section id="representation-4" class="slide level2">
-<h2>Représentation</h2>
-<h3 id="agregation">Agrégation</h3>
-<video data-autoplay data-src="img/FrancePixels.mp4" height="500">
-</video>
-<p><span class="caption" style="font-size:smaller;"><a href="http://www.comeetie.fr/galerie/francepixels/#splash">E. Côme, 2014, France Pixels</a></span></p>
-</section><section id="representation-5" class="slide level2">
-<h2>Représentation</h2>
-<h3 id="clusters">Clusters</h3>
-<video data-autoplay data-src="img/clusters.mp4" height="500">
-</video>
-</section><section id="representation-6" class="slide level2">
-<h2>Représentation</h2>
-<h3 id="lissage">Lissage</h3>
-<video data-autoplay data-src="img/aperitif.mp4" height="500">
-</video>
-<p><span class="caption" style="font-size:smaller;"><a href="https://analytics.huma-num.fr/Hadrien.Commenges/aperitif/">H. Commenges, 2017, Apérit-IF</a></span></p>
-</section><section id="problemes-techniques" class="slide level2">
-<h2>Problèmes techniques</h2>
-<h4 id="pour-laffichage">Pour l’affichage :</h4>
-<ul>
-<li class="fragment">Les logiciels de SIG ne gèrent pas les données massives…</li>
-<li class="fragment">… et les outils de DAO encore moins.</li>
-<li class="fragment">Impossible d’afficher des millions d’entités vectorielles sur un ordinateur lambda : SIG ou web <br> =&gt; Quand le vecteur n’est pas possible :
-<ul>
-<li class="fragment">On agrège : Clusters, hexbins, densité etc.</li>
-<li class="fragment">On rasterise : GeoServer, MapServer etc.</li>
-<li class="fragment">Tuilage traditionnel (GeoServer, MapServer…) et plus moderne (Mapbox, CARTO, TileMill)</li>
-</ul></li>
-</ul>
-<p><img src="img/Mericksay2.png" height="130" style="background:none; border:none; box-shadow:none;"> <span class="caption" style="font-size:smaller;"><a href="https://halshs.archives-ouvertes.fr/halshs-01468314">B. Mericksay, ibid.</a></span></p>
-</section><section id="problemes-techniques-1" class="slide level2">
-<h2>Problèmes techniques</h2>
-<h3 id="traitement">Traitement :</h3>
-<ul>
-<li>Les logiciels de SIG ne gèrent pas les données massives…</li>
-<li>… et les outils de DAO encore moins.</li>
-</ul>
-<ul>
-<li class="fragment">Les données massives sont difficilement manipulables hors environnements propres aux données :
-<ul>
-<li class="fragment">Pré-traitement des données : R, Python, filtres intra-API</li>
-<li class="fragment">Mise en forme et requête des données : Idem + SQL</li>
-</ul></li>
-</ul>
-</section><section id="problemes-techniques-2" class="slide level2" data-background="img/rpythonsql.jpg" data-background-size="contain">
-<h2>Problèmes techniques</h2>
-</section><section id="traitement-creation" class="slide level2">
-<h2>Traitement + création</h2>
-<p><img src="img/facebook_map.png" height="500" style="background:none; border:none; box-shadow:none;"> <span class="caption" style="font-size:smaller;"><a href="https://paulbutler.org/archives/visualizing-facebook-friends/">P. Butler, 2010, Visualizing Facebook Friends</a></span></p>
-</section></section>
-<section><section id="des-donnees-heterogenes" class="titleslide slide level1"><h1>Des données hétérogènes</h1></section><section id="representation-7" class="slide level2">
-<h2>Représentation</h2>
-<p><img src="img/mtmx1.png" height="550" style="background:none; border:none; box-shadow:none;"> <span class="caption" style="font-size:smaller;"><a href="https://mtmx.github.io/blog/carto_cheptels/">M. Garnier (Matamix), 2017, Cartes à points pour bêtes à poils</a></span></p>
-<h3 id="comment-donner-une-vision-synthetique-de-la-repartition-de-chaque-type">Comment donner une vision synthétique de la répartition de chaque type ?</h3>
-</section><section id="representation-8" class="slide level2" data-background="img/mtmx2.png" data-background-size="contain">
-<h2><span style="color:black;">Représentation</span></h2>
-<p><span style="color:black;">- Technique des “small-multiples”</span></p>
-</section><section id="representation-9" class="slide level2">
-<h2>Représentation</h2>
-<p><img src="img/hetero1.png" height="550" style="background:none; border:none; box-shadow:none;"> <span class="caption" style="font-size:smaller;"><a href="http://www.comeetie.fr/galerie/BatiParis/#12/48.8589/2.3491">E. Côme, 2015, Bâti Paris</a></span></p>
-<h3 id="comment-donner-une-vision-synthetique-de-la-repartition-de-chaque-type-1">Comment donner une vision synthétique de la répartition de chaque type ?</h3>
-</section><section id="representation-10" class="slide level2">
-<h2>Représentation</h2>
-<h3 id="selection">Selection</h3>
-<video data-autoplay data-src="img/parisbati.mp4" height="500">
-</video>
-<p><span class="caption" style="font-size:smaller;"><a href="http://www.comeetie.fr/galerie/BatiParis/#12/48.8589/2.3491">E. Côme, 2015, Bâti Paris</a></span></p>
-<ul>
-<li class="fragment">Laisser l’utilisateur afficher ses propres classes</li>
-</ul>
-</section><section id="representation-11" class="slide level2">
-<h2>Représentation</h2>
-<h3 id="drill-down">Drill-down</h3>
-<video data-autoplay data-src="img/drill_mapd.mp4" height="500">
-</video>
-<p><span class="caption" style="font-size:smaller;"><a href="https://www.mapd.com/blog/2016/06/17/our-latest-tweetmap-innovation-streaming-content/">Team MapD, 2016, Tweetmap</a></span></p>
-<ul>
-<li class="fragment">Y compris de manière itérative</li>
-</ul>
-</section><section id="representation-12" class="slide level2">
-<h2>Représentation</h2>
-<h3 id="multiplier-les-informations">Multiplier les informations</h3>
-<video data-autoplay data-src="img/velib_multipt.mp4" height="500">
-</video>
-<p><span class="caption" style="font-size:smaller;"><a href="http://www.comeetie.fr/galerie/velib/">E. Côme, 2013</a></span></p>
-</section><section id="representation-13" class="slide level2">
-<h2>Représentation</h2>
-<h3 id="guider-le-lecteur">Guider le lecteur</h3>
-<p><img src="img/francepixels_ex.png" height="500" style="background:none; border:none; box-shadow:none;"> <span class="caption" style="font-size:smaller;"><a href="http://www.comeetie.fr/galerie/francepixels/#splash">E. Côme, 2014, France Pixels</a></span></p>
-</section><section id="representation-14" class="slide level2">
-<h2>Représentation</h2>
-<h3 id="guider-le-lecteur-1">Guider le lecteur</h3>
-<video data-autoplay data-src="img/got.mp4" height="500">
-</video>
-<p><span class="caption" style="font-size:smaller;"><a href="https://storymap.knightlab.com/examples/aryas-journey/">Northwestern University Knight Lab, StoryMapsJS</a></span></p>
-</section><section id="representation-15" class="slide level2">
-<h2>Représentation</h2>
-<h3 id="guider-le-lecteur-2">Guider le lecteur</h3>
-<p><img src="img/northkorea.png" height="500" style="background:none; border:none; box-shadow:none;"> <span class="caption" style="font-size:smaller;"><a href="http://www.abc.net.au/news/2017-10-16/north-korea-missile-range-map/8880894">Martino, Byrd &amp; Spraggon, 2017, Where can North Korea’s missiles reach?</a></span></p>
-</section><section id="representation-16" class="slide level2">
-<h2>Représentation</h2>
-<h3 id="laisser-au-lecteur-le-soin-de-comprendre-lui-meme-les-phenomenes-cartographies">Laisser au lecteur le soin de comprendre lui-même les phénomènes cartographiés</h3>
-<video data-autoplay data-src="img/mobiliscope.mp4" height="500">
-</video>
-<p><span class="caption" style="font-size:smaller;"><a href="http://mobiliscope.parisgeo.cnrs.fr/">J. Vallée, C. Lecomte &amp; al., 2017, Mobiliscope</a></span></p>
-</section><section id="representation-17" class="slide level2">
-<h2>Représentation</h2>
-<h3 id="laisser-explorer-les-donnees-massives-et-heterogenes">Laisser explorer les données massives et hétérogènes</h3>
-<video data-autoplay data-src="img/mapd_ships.mp4" height="500">
-</video>
-<p><span class="caption" style="font-size:smaller;"><a href="https://www.mapd.com/blog/2017/08/22/an-interactive-deep-dive-into-11-6b-rows-of-us-shipping-data/">M. McLintic, MapD, 2017, An interactive GPU-powered deep dive into 11.6 billion rows of US shipping data</a></span></p>
-</section><section id="problemes-techniques-3" class="slide level2">
-<h2>Problèmes techniques</h2>
-<ul>
-<li class="fragment">Peu d’outils “clefs-en-main” pour créer des géovisualisation interactives…</li>
-<li class="fragment">… besoin de passer par du développement.
-<ul>
-<li class="fragment">Javascript <img src="img/d3.png" height="100" style="background:none; border:none; box-shadow:none;"> <img src="img/vega.png" height="100" style="background:none; border:none; box-shadow:none;"> <img src="img/plotly.png" height="100" style="background:none; border:none; box-shadow:none;"> <img src="img/leaflet.png" height="100" style="background:none; border:none; box-shadow:none;"></li>
-<li class="fragment">R <img src="img/shiny.png" height="100" style="background:none; border:none; box-shadow:none;"> <img src="img/flexdb.png" height="100" style="background:none; border:none; box-shadow:none;"></li>
-<li class="fragment">Python <img src="img/dash.png" height="100" style="background:none; border:none; box-shadow:none;"> <img src="img/bokeh.png" height="100" style="background:none; border:none; box-shadow:none;"></li>
-</ul></li>
-</ul>
-</section></section>
-<section><section id="des-donnees-ephemeres" class="titleslide slide level1"><h1>Des données éphémères</h1></section><section id="retour-sur-la-presentation-des-nouvelles-sources" class="slide level2">
-<h2>Retour sur la présentation des nouvelles sources</h2>
-<ul>
-<li class="fragment">D’immenses flux de données en permanence</li>
-<li class="fragment">qui rendent les données rapidement obsolètes</li>
-<li class="fragment">=&gt; On n’est plus dans le paradigme de mise à jour décennalle autour des données INSEE
-<ul>
-<li class="fragment">La carte doit être évolutive simplement et rapidement</li>
-<li class="fragment">La documentation ne suffit plus : toute la production d’une carte doit être un “workflow”</li>
-<li class="fragment">Penser toute la construction de la carte en termes d’automatisation et reproductibilité</li>
-<li class="fragment">Par génération automatique depuis des API, depuis des données standardisées etc.</li>
-</ul></li>
-</ul>
-</section></section>
-<section><section id="en-guise-de-conclusion" class="titleslide slide level1" data-background="img/Vermeer.jpeg" data-background-size="contain"><h1>En guise de conclusion</h1></section><section id="merci-de-votre-attention" class="slide level2">
-<h2>Merci de votre attention <i class="fa fa-map-o" aria-hidden="true"></i><i class="fa fa-globe" aria-hidden="true"></i><i class="fa fa-smile-o" aria-hidden="true"></i></h2>
-<p><img src="img/Wood.png" height="400" style="background:none; border:none; box-shadow:none;"> <span class="caption" style="font-size:smaller;"><a href="http://makingmaps.owu.edu/mm/cartographydead.pdf">D. Wood, 2003, Cartography is dead (thank God!)</a></span></p>
-</section></section>
-    </div>
-  </div>
-
-  <script src="Nouvelles_representations_files/reveal.js-3.3.0.1/lib/js/head.min.js"></script>
-  <script src="Nouvelles_representations_files/reveal.js-3.3.0.1/js/reveal.js"></script>
-
-  <script>
-
-      // Full list of configuration options available at:
-      // https://github.com/hakimel/reveal.js#configuration
-      Reveal.initialize({
-        // Display the page number of the current slide
-        slideNumber: true,
-        // Push each slide change to the browser history
-        history: true,
-        // Vertical centering of slides
-        center: false,
-        // Opens links in an iframe preview overlay
-        previewLinks: false,
-        // Transition style
-        transition: 'none', // none/fade/slide/convex/concave/zoom
-        // Transition style for full page slide backgrounds
-        backgroundTransition: 'default', // none/fade/slide/convex/concave/zoom
-
-        menu: {
-          numbers: true,
-          custom: false,
-          themes: false,
-          transitions: false
-        },
-
-
-
-        // Optional reveal.js plugins
-        dependencies: [
-          { src: 'Nouvelles_representations_files/reveal.js-3.3.0.1/plugin/menu/menu.js', async: true },
-        ]
-      });
-    </script>
-  <!-- dynamically load mathjax for compatibility with self-contained -->
-  <script>
-    (function () {
-      var script = document.createElement("script");
-      script.type = "text/javascript";
-      script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
-      document.getElementsByTagName("head")[0].appendChild(script);
-    })();
-  </script>
-
-<script>
-  (function() {
-    if (window.jQuery) {
-      Reveal.addEventListener( 'slidechanged', function(event) {  
-        window.jQuery(event.previousSlide).trigger('hidden');
-        window.jQuery(event.currentSlide).trigger('shown');
-      });
-    }
-  })();
-</script>
-
-
   </body>
 </html>
